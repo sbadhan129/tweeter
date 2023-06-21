@@ -7,23 +7,89 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
     <script type="text/javascript" src="/scripts/client.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>tweeter</span>
+      <div class="new-tweet">
+        <p>Write a New Tweet</p>
+        <i class="fas fa-angle-double-down"></i>
+      </div>
     </nav>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <header>
+      <div class="main">
+          <img src="/images/tt.png"> 
+      </div>
+      <br>
+      <div class ="name">
+          <h2>Sourav</h2>
+      </div>
+  </header>
+
+    <main class="container">
+      <section class="new-tweet">
+        <h2 class="heading">Compose Tweet</h2>
+        <div class= "Form-container"
+        <form action="/tweets" method="POST">
+          <label for="tweet-text">What are you humming about?</label>
+          <div class="edit">
+          <textarea name="text" id="tweetText"></textarea>
+          <div class="submitter-count">
+            <button type="submit" class="submit-button">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+           </div>
+          </div>
+        </form>
+  
+<div class="tweetContainer">
+ <section id="tweets-container">
+        <article class="tweet">
+            <header>
+                <span class="user">
+                    <img src="/images/av.jpg" alt="User Image">
+                    <span class="name">Sourav</span>
+                </span>
+                <span class="handle">@Sourav</span>
+            </header>
+            <p>This is my Sourav's tweet.</p>
+            <footer>
+                <span class="date">1 days ago</span>
+                <span class="icons">
+                    <i class="fas fa-flag"></i>
+                    <i class="fas fa-retweet"></i>
+                    <i class="fas fa-heart"></i>
+                </span>
+            </footer>
+        </article>
+    </section>
+  </section>      
+ </div>
+  </div>
+    </main>
   </body>
 </html>
