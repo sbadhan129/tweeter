@@ -136,6 +136,14 @@
   background: #f5f8fa;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-.tweet:hover .icons i {
+.tweet:hover .icons i.fa-flag {
   color: #22fe0e;
+}
+
+.tweet:hover .icons i.fa-retweet {
+  color: #c01a33;
+}
+
+.tweet:hover .icons i.fa-heart {
+  color: #1313bb;
 }
