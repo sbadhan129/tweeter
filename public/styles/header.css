@@ -1,0 +1,22 @@
+header {
+height: 520px;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #3a0057;
+background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+}
+
+header img {
+  margin-bottom: 10px;
+}
+
+.main {
+  margin-top: 120px;
+}
+
+.name {
+  color: antiquewhite;
+}
