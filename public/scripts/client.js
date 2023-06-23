@@ -67,6 +67,19 @@ loadTweets();
 
 $('form').on('submit', function(event) {
 event.preventDefault();
+
+let tweetMsg = $(this).find('textarea').val();
+
+//check if the tweet is empty or exceeds its limit
+if(tweetMsg === '' || tweetMsg === null){
+  alert('Error: There is nothing to tweet!');
+  return;
+ } else if(tweetMsg.length >140) {
+  alert('Error: This tweet exceeds its character limit!');
+return;
+}
+
+//Serialization Process
 let formData = $(this).serialize();
 $.ajax({
   url: 'http://localhost:8080/tweets/',
@@ -85,5 +98,5 @@ $.ajax({
 });
 });
 // Calling the renderTweets with the data array given above
-renderTweets(data);
+loadTweets();
 });
