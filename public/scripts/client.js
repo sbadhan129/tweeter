@@ -45,7 +45,7 @@ const renderTweets = function(tweets) {
     const $tweet = createTweetElement(tweet);
 
     // Appending the tweet element to the tweets container
-    $tweetsContainer.append($tweet);
+    $tweetsContainer.prepend($tweet);
   });
 }
 
@@ -88,9 +88,7 @@ $.ajax({
       success: function(){
         console.log('Data is sent to the server: ', formData);
         $('textarea').val('');
-        $.getJSON('/tweets', function(updatedData) {
-          renderTweets(updatedData);
-        });
+        loadTweets();
       },
       error: function(){
         console.error('There is an error in sending a data');
