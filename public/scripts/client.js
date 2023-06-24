@@ -9,6 +9,12 @@
 $(document).ready(function(){
 //$('time.timeago').timeago();
 
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 const createTweetElement = function(tweet) {
   const $tweet = $(`
     <article class="tweet">
@@ -19,7 +25,7 @@ const createTweetElement = function(tweet) {
         </span>
         <span class="handle">${tweet.user.handle}</span>
       </header>
-      <p>${tweet.content.text}</p>
+      <p>${escape(tweet.content.text)}</p>
       <footer>
         <span class="date">${moment(tweet.created_at).fromNow()}</span>
         <span class="icons">
