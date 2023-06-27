@@ -22,6 +22,7 @@
   margin: 5px auto;
   align-items: stretch;
   justify-content: flex-end;
+  flex-direction: column;
 }
 .new-tweet h2 {
   text-align: left;
@@ -146,4 +147,14 @@
 
 .tweet:hover .icons i.fa-heart {
   color: #1313bb;
+}
+
+#error-Message{
+  color: #c01a33;
+  display: none;
+  border-radius: 10%;
+  padding: 10px;
+  text-align: center;
+  border: 3px solid #c01a33;
+  background-color: #fff;
 }
