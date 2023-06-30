@@ -76,16 +76,14 @@ event.preventDefault();
 
 let tweetMsg = $(this).find('textarea').val();
 
-//check if the tweet is empty or exceeds its character limit
+//check if the tweet is empty or exceeds its character limit and give error
 if(tweetMsg === '' || tweetMsg === null){
-  $('#error-Message').text('Error: There is nothing to tweet!');
+  $('#error-Message').text('⚠️ Error: There is nothing to tweet! ⚠️');
   $('#error-Message').slideDown();
- // alert('Error: There is nothing to tweet!');
   return;
  } else if(tweetMsg.length >140) {
-  $('#error-Message').text('Error: This tweet exceeds its character limit!');
+  $('#error-Message').text('⚠️ Error: This tweet exceeds its character limit! ⚠️');
   $('#error-Message').slideDown();
-  //alert('Error: This tweet exceeds its character limit!');
 return;
 }
 
