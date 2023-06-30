@@ -1,4 +1,4 @@
-header {
+body > header {
 height: 520px;
 width: 100%;
 display: flex;
@@ -18,5 +18,18 @@ header img {
 }
 
 .name {
-  color: antiquewhite;
+  color: rgb(179, 126, 58);
+}
+
+@media screen and (min-width: 1024px) {
+  body > header {
+    height: 60vh; 
+    width: 25%; 
+    position: fixed; 
+    top: 195px;
+    left: 35px;
+    padding: 20px;
+    background-color: saddlebrown;
+    background-image:url("https://www.transparenttextures.com/patterns/diagmonds.png");
+  }
 }
