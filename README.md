@@ -21,5 +21,13 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 ![Screenshot](./docs/tweet.png)
+
 ![Screenshot](./docs/mobiletweet.png)
+
 ![Screenshot](./docs/errortweet.png)
+
+## Features
+
+- You can create a new tweet just like tweeter 
+-  It will show you the time or how many days ago you have posted that tweet.
+- Added the media queries to make it more flexible to use it on laptop and on mobiles apps as well.
