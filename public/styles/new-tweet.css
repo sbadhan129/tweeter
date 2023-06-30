@@ -11,7 +11,7 @@
   90% { color: olivedrab; }
   100% { color: crimson; }
 }
-
+/* set a color red for red class*/
 .red {
   color: red;
 }
@@ -134,7 +134,7 @@
 
 /* Hover State */
 .tweet:hover {
-  background: #f5f8fa;
+  background: #305265;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 .tweet:hover .icons i.fa-flag {
@@ -157,4 +157,10 @@
   text-align: center;
   border: 3px solid #c01a33;
   background-color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .new-tweet textarea {
+    width: 100%; 
+  }
 }
