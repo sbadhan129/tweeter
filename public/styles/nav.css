@@ -1,5 +1,7 @@
 nav {
   position: fixed;
+  display: flex;
+  justify-content: space-between;
   height: 120px;
   width: 100%;
   background-color: #4056A1;
@@ -11,14 +13,26 @@ nav span {
   font-family: 'Bungee', sans-serif;
 }
 
-.new-tweet {
-  float: right;
-  display: flex;
-  align-items: center;
-}
 .fas.fa-angle-double-down {
-  display: flex;
+  
   color: red;
   margin-left: 10px;
- align-items: flex-end;
+ padding-left: 45%;
 }
+
+@media screen and (min-width: 1024px) {
+  nav {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    height: 120px;
+  }
+
+  #tweets-container {
+    margin-left: 130px;
+    width: 80%;
+  }
+}
+
+
