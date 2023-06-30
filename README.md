@@ -21,3 +21,5 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 ![Screenshot](./docs/tweet.png)
+![Screenshot](./docs/mobiletweet.png)
+![Screenshot](./docs/errortweet.png)
